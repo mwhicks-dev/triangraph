@@ -1,5 +1,5 @@
-#ifndef triangraph_CoordinatePlane_h
-#define triangraph_CoordinatePlane_h
+#ifndef tgr_CoordinatePlane_h
+#define tgr_CoordinatePlane_h
 
 #include <grapph/include/FeatureGraph.h>
 

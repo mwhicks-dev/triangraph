@@ -1,5 +1,5 @@
-#ifndef triangraph_Utility_h
-#define triangraph_Utility_h
+#ifndef tgr_Utility_h
+#define tgr_Utility_h
 
 #include "Triangle.h"
 

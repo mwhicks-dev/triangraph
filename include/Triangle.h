@@ -9,11 +9,9 @@ namespace tgr {
 
         CoordinatePlane& g;
 
-        grapph::vertex_t A;
+        grapph::vertex_t A, B, C;
 
-        grapph::vertex_t B;
-
-        grapph::vertex_t C;
+        float a, b, c;
 
     public:
 
@@ -22,7 +20,7 @@ namespace tgr {
 
         float getArea();
 
-        float getAngle(grapph::vertex_t);
+        std::vector<float> getAngles();
 
     };
 

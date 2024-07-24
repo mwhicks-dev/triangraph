@@ -3,6 +3,8 @@
 
 #include <grapph/include/FeatureGraph.h>
 
+#include <stdexcept>
+
 namespace tgr {
 
     /// @brief embedded graph with vertex coordinates
@@ -14,6 +16,10 @@ namespace tgr {
     public:
 
         CoordinatePlane() { setEdgeAutoState(coordinatePlaneEdgeState); }
+
+        char getEdgeState(grapph::edge_t edge) {
+            throw std::invalid_argument("Edges have no state");
+        }
 
     };
 

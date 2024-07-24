@@ -2,8 +2,6 @@
 
 #include "CoordinatePlane.h"
 
-#include <stdexcept>
-
 TEST(CoordinatePlaneTest, TestVertexAdd1) {
     tgr::CoordinatePlane g;
 

@@ -21,6 +21,16 @@ namespace tgr {
             throw std::invalid_argument("Edges have no state");
         }
 
+        grapph::vertex_t addVertex(std::pair<float, float> coordinates) { 
+            return grapph::FeatureGraph<std::pair<float, float>, char>
+                    ::addVertex(coordinates);
+        }
+
+        grapph::vertex_t addVertex(float x, float y) { 
+            return grapph::FeatureGraph<std::pair<float, float>, char>
+                    ::addVertex({x, y});
+        }
+
     };
 
 }

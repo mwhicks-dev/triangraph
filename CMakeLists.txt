@@ -21,3 +21,7 @@ add_library(grapph STATIC include/grapph/src/Graph.cpp include/grapph/src/Homomo
 add_executable(coordinate_plane_test include/CoordinatePlane.h
         test/CoordinatePlaneTest.cpp)
 target_link_libraries(coordinate_plane_test gtest gtest_main grapph)
+
+add_executable(triangle_test include/Triangle.h src/Triangle.cpp
+        test/TriangleTest.cpp)
+target_link_libraries(triangle_test gtest gtest_main grapph)

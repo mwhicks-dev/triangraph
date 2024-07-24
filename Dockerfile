@@ -12,4 +12,4 @@ WORKDIR /triangraph
 RUN cmake .
 RUN cmake --build .
 
-ENTRYPOINT ./coordinate_plane_test
+ENTRYPOINT ./coordinate_plane_test && ./triangle_test

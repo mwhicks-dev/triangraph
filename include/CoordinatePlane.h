@@ -7,9 +7,9 @@ namespace tgr {
 
     /// @brief embedded graph with vertex coordinates
     class CoordinatePlane 
-            : public grapph::FeatureGraph<std::pair<float, float>, void> {
+            : public grapph::FeatureGraph<std::pair<float, float>, char> {
 
-        static void coordinatePlaneEdgeState(grapph::edge_t uw) { return; }
+        static char coordinatePlaneEdgeState(grapph::edge_t uw) { return '\0'; }
 
     public:
 

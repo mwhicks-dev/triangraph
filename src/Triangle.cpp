@@ -39,9 +39,14 @@ float Triangle::getArea() {
 std::vector<float> Triangle::getAngles() {
     std::vector<float> angles;
 
+    // calculate angles in radians
     angles.push_back(acos((pow(a, 2) + pow(b, 2) - pow(c, 2)) / (2 * a * b)));
     angles.push_back(acos((pow(c, 2) + pow(a, 2) - pow(b, 2)) / (2 * c * a)));
     angles.push_back(acos((pow(b, 2) + pow(c, 2) - pow(a, 2)) / (2 * b * c)));
+
+    for (size_t i = 0; i < angles.size(); i++) { 
+        angles[i] *= 180 / (4 * atan(1));
+    }
 
     return angles;
 }
